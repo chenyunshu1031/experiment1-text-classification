@@ -1,0 +1,31 @@
+{
+  "source_sha256": "484667d165458da7f73ba36d172d67e14864e1aa5ab1ee6262e2966dd295c863",
+  "split_sha256": "77593837c46c1db66d096edb63ef1fde73be7f10ffe3a2f491efe17931534ecd",
+  "split": "stratified_random_80_20",
+  "seed": 42,
+  "tfidf": {
+    "lowercase": true,
+    "stop_words": "english",
+    "strip_accents": "unicode",
+    "sublinear_tf": true,
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 2,
+    "max_df": 0.95,
+    "max_features": 20000
+  },
+  "algorithm": "SGDClassifier_hinge_linear_SVM",
+  "alpha": 0.0001,
+  "learning_rate": "constant",
+  "eta0": 2.0,
+  "average": true,
+  "max_validation_epochs": 120,
+  "checkpoint_rule": "max_validation_macro_f1_then_accuracy_then_earlier_epoch",
+  "selection_informed_by_exploratory_schedule_comparison": true,
+  "test_csv_opened": false,
+  "python": "3.10.22",
+  "sklearn": "1.7.2",
+  "script_sha256": "6e160885e341410354efa9d861efcc0d93ef8300bc874bfedde6b7026fca4ea6"
+}

@@ -1,0 +1,4 @@
+alpha,learning_rate,average,selected_epoch,epochs_run,selection_rule,train_accuracy,val_accuracy,val_macro_f1,train_hinge_loss,val_hinge_loss,reference_match
+1e-05,optimal,False,20,20,max_val_macro_f1_then_accuracy_then_earlier_epoch,0.999830335934849,0.9382632293080054,0.9384131050404502,0.00040610207335609906,0.04973637232264223,"{'selected_epoch': True, 'val_macro_f1': True}"
+0.0001,optimal,False,4,20,max_val_macro_f1_then_accuracy_then_earlier_epoch,0.997624703087886,0.9443690637720489,0.9445998225942513,0.01029653122478268,0.05717564714914488,"{'selected_epoch': True, 'val_macro_f1': True}"
+0.001,optimal,False,9,20,max_val_macro_f1_then_accuracy_then_earlier_epoch,0.9779436715303699,0.9308005427408412,0.9305180887281607,0.09425110151701131,0.11492940089290463,"{'selected_epoch': True, 'val_macro_f1': True}"

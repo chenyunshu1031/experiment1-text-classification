@@ -1,0 +1,14 @@
+{
+  "selected_epoch": 70,
+  "max_epochs": 120,
+  "alpha": 0.0001,
+  "eta0": 2.0,
+  "average": true,
+  "train_accuracy": 0.997115710892433,
+  "val_accuracy": 0.9443690637720489,
+  "val_macro_f1": 0.9444402010987307,
+  "train_hinge_loss": 0.010700591470261716,
+  "val_hinge_loss": 0.050531007433631155,
+  "epoch_history_sha256": "1e6d6e1362b90bde415a5628761bb4d4c233a3a3ea2c83886e149e3d573d48e1",
+  "validation_model_sha256": "8c769917133507559a0a60e656ec1f30d467cd224e3d66556a69ee64d58a0958"
+}

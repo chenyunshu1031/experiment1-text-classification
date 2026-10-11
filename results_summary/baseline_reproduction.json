@@ -1,0 +1,87 @@
+{
+  "nb": {
+    "experiment": "nb_raw5000",
+    "tfidf": {
+      "max_features": 5000,
+      "lowercase": true,
+      "analyzer": "word",
+      "token_pattern": "(?u)\\b\\w\\w+\\b",
+      "stop_words": null,
+      "ngram_range": [
+        1,
+        1
+      ],
+      "min_df": 1,
+      "max_df": 1.0,
+      "binary": false,
+      "use_idf": true,
+      "smooth_idf": true,
+      "sublinear_tf": false,
+      "norm": "l2",
+      "dtype": "<class 'numpy.float64'>"
+    },
+    "alpha": 0.1,
+    "train_accuracy": 0.9635222259925348,
+    "val_accuracy": 0.8914518317503393,
+    "val_macro_f1": 0.8921926312556477,
+    "train_log_loss": 0.2107082048263511,
+    "val_log_loss": 0.40499915165751044,
+    "reference_match": {
+      "val_macro_f1": true,
+      "val_accuracy": true
+    }
+  },
+  "svm": [
+    {
+      "alpha": 1e-05,
+      "learning_rate": "optimal",
+      "average": false,
+      "selected_epoch": 20,
+      "epochs_run": 20,
+      "selection_rule": "max_val_macro_f1_then_accuracy_then_earlier_epoch",
+      "train_accuracy": 0.999830335934849,
+      "val_accuracy": 0.9382632293080054,
+      "val_macro_f1": 0.9384131050404502,
+      "train_hinge_loss": 0.00040610207335609906,
+      "val_hinge_loss": 0.04973637232264223,
+      "reference_match": {
+        "selected_epoch": true,
+        "val_macro_f1": true
+      }
+    },
+    {
+      "alpha": 0.0001,
+      "learning_rate": "optimal",
+      "average": false,
+      "selected_epoch": 4,
+      "epochs_run": 20,
+      "selection_rule": "max_val_macro_f1_then_accuracy_then_earlier_epoch",
+      "train_accuracy": 0.997624703087886,
+      "val_accuracy": 0.9443690637720489,
+      "val_macro_f1": 0.9445998225942513,
+      "train_hinge_loss": 0.01029653122478268,
+      "val_hinge_loss": 0.05717564714914488,
+      "reference_match": {
+        "selected_epoch": true,
+        "val_macro_f1": true
+      }
+    },
+    {
+      "alpha": 0.001,
+      "learning_rate": "optimal",
+      "average": false,
+      "selected_epoch": 9,
+      "epochs_run": 20,
+      "selection_rule": "max_val_macro_f1_then_accuracy_then_earlier_epoch",
+      "train_accuracy": 0.9779436715303699,
+      "val_accuracy": 0.9308005427408412,
+      "val_macro_f1": 0.9305180887281607,
+      "train_hinge_loss": 0.09425110151701131,
+      "val_hinge_loss": 0.11492940089290463,
+      "reference_match": {
+        "selected_epoch": true,
+        "val_macro_f1": true
+      }
+    }
+  ]
+}
