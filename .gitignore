@@ -1,0 +1,12 @@
+__pycache__/
+.venv/
+data/*.csv
+# Keep the small results_summary/ snapshots and report figure versioned.
+# Ignore the large, timestamped run directories below.
+sgd_retest/
+sgd_schedule_exploration/
+sgd_smooth_final/
+preprocessing_ablation/
+mlp_architecture_ablation/
+report_baseline_reproduction/
+split_stability_checks/
