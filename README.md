@@ -46,10 +46,10 @@ python -B -u check_split_stability.py --check-only
 python -B -u check_split_stability.py
 ```
 
-最后一条会打印新的 `Validation directory:`。确认输出中的验证 Macro-F1 约为 `0.944440`、保存轮次为 `70`，再使用该次运行的目录进行全量重训：
+前面的 python -B -u finalize_smooth_sgd_svm.py --validate 命令会打印 Validation directory:。确认该次验证的 Macro-F1 约为 0.944440、保存轮次为 70，再使用这次验证输出的目录进行全量重训：
 
 ```powershell
-$validationDir = "刚才打印的 Validation directory 完整路径"
+$validationDir = "--validate 命令打印的 Validation directory 完整路径"
 python -B -u finalize_smooth_sgd_svm.py --finalize --validation-dir $validationDir
 ```
 
